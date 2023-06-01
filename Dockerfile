@@ -1,4 +1,3 @@
-FROM node:alpine
-COPY . /app
-WORKDIR /app
-CMD node app.js
+FROM python:3
+COPY . .
+CMD [ "python", "-u","./test.py" ]
