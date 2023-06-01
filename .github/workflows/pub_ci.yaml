@@ -19,5 +19,4 @@ jobs:
     - name: Build the hello-world Docker image
       run: |
         docker build . --tag ghcr.io/darthvader2/ghcr-test:latest
-        docker run ghcr.io/darthvader2/ghcr-test:latest
         docker push ghcr.io/darthvader2/ghcr-test:latest
